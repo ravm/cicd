@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ravm.github.io/cicd",
+  "homepage": "https://ravm.github.io/cicd/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

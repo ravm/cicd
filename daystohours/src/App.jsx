@@ -22,9 +22,6 @@ function App() {
           {count} day(s) is equal to {daysToHoursConverter(count)} hour(s)
         </p>
         </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

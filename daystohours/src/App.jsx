@@ -9,16 +9,6 @@ function App() {
   }
 
   return (
-<<<<<<< HEAD
-    <div>
-      <h1>Vite + React</h1>
-      <p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </p>
-    </div>
-=======
     <>
       <div className="card">
         <h2>Days to Hours Converter</h2>
@@ -33,7 +23,6 @@ function App() {
         </p>
         </div>
     </>
->>>>>>> alexander
   )
 }
 

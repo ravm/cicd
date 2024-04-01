@@ -15,6 +15,7 @@ function App() {
         <p>Enter the number of days to convert to hours</p>
         <input
           type="number"
+          placeholder='Enter number of days'
           value={count}
           onChange={(e) => setCount(e.target.value)}
         />

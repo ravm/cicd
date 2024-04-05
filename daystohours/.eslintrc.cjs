@@ -24,7 +24,10 @@ module.exports = {
 	],
 	'parserOptions': {
 		'ecmaVersion': 'latest',
-		'sourceType': 'module'
+		'sourceType': 'module',
+		'ecmaFeatures': {
+			'jsx': true
+		}
 	},
 	'rules': {
 		'@stylistic/js/indent': [
@@ -42,6 +45,7 @@ module.exports = {
 		'@stylistic/js/semi': [
 			'error',
 			'never'
-		]
+		],
+		'no-unused-vars': ['warn', { varsIgnorePattern: '^(React|App)$' }]
 	}
 }

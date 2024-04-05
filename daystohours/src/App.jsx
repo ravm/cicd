@@ -19,9 +19,11 @@ function App () {
 					value={count}
 					onChange={(e) => setCount(e.target.value)}
 				/>
-				<p>
-          {count} day(s) is equal to {count !== 0 ? daysToHoursConverter(count).toFixed(2) : 0} hour(s)
-        </p>
+				{count && (
+          <p>
+            {count} day(s) is equal to {Number.isInteger(count) ? count * 24 : daysToHoursConverter(count).toFixed(2)} hour(s)
+          </p>
+        )}
 			</div>
 		</>
 	)

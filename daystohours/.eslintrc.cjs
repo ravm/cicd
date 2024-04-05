@@ -29,6 +29,7 @@ module.exports = {
 			'jsx': true
 		}
 	},
+	'ignorePatterns': ['App.test.jsx'],
 	'rules': {
 		'@stylistic/js/indent': [
 			'error',

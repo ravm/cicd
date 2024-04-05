@@ -32,8 +32,8 @@ jobs:
         run: npm install
         working-directory: daystohours
 
-      - name: Run ESLint
-        run: npm run lint
+      - name: Run ESLint & fix errors
+        run: npm run lint -- --fix
         working-directory: daystohours
 
       - name: Run tests

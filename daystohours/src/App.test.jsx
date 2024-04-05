@@ -1,5 +1,5 @@
 // Test: converts days to hours correctly
-import { render, screen } from '@testing-library/react';
+import { render, screen, test, expect } from '@testing-library/react';
 import '@testing-library/jest-dom';
 // eslint-disable-next-line no-unused-vars
 import React from 'react';

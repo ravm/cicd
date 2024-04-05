@@ -5,7 +5,8 @@ function App () {
 	const [count, setCount] = useState(0)
 
 	function daysToHoursConverter (days) {
-		return days * 24
+		console.log('days:', days)
+		return (days * 24)
 	}
 
 	return (
@@ -17,13 +18,13 @@ function App () {
 					type="number"
 					placeholder='Enter number of days'
 					value={count}
-					onChange={(e) => setCount(e.target.value)}
+					onChange={e => [setCount(e.target.value), console.log('count:', typeof(parseFloat(count)))]}
 				/>
 				{count && (
-          <p>
-            {count} day(s) is equal to {Number.isInteger(count) ? count * 24 : daysToHoursConverter(count).toFixed(2)} hour(s)
-          </p>
-        )}
+					<p>
+						{count} day(s) is equal to {Number.isInteger(((Number(count)))) ? count * 24 : (Number(daysToHoursConverter(count)).toFixed(2))} hour(s)
+					</p>
+				)}
 			</div>
 		</>
 	)

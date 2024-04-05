@@ -20,7 +20,7 @@ function App () {
 					onChange={(e) => setCount(e.target.value)}
 				/>
 				<p>
-					{count} day(s) is equal to {daysToHoursConverter(count)} hour(s)
+					{count} day(s) is equal to {daysToHoursConverter(count).toFixed(2)} hour(s)
 				</p>
 			</div>
 		</>

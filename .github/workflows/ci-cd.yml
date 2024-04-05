@@ -33,7 +33,7 @@ jobs:
         working-directory: daystohours
 
       - name: Run tests
-        run: npm test -- src/App.test.jsx
+        run: npm test -- --coverage
         working-directory: daystohours
 
       - name: Upload coverage to Codecov

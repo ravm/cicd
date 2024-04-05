@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import './App.css'
 
 function App () {
-	const [count, setCount] = useState(0)
+	const [count, setCount] = useState(1)
 
 	function daysToHoursConverter (days) {
-		console.log('days:', days)
 		return (days * 24)
 	}
 
@@ -18,7 +17,7 @@ function App () {
 					type="number"
 					placeholder='Enter number of days'
 					value={count}
-					onChange={e => [setCount(e.target.value), console.log('count:', typeof(parseFloat(count)))]}
+					onChange={e => setCount(e.target.value)}
 				/>
 				{count && (
 					<p>

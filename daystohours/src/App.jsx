@@ -11,7 +11,7 @@ function App () {
 	return (
 		<>
 			<div className="card">
-				<h2>Days to Hours Converter</h2>
+				<h2>Days to hours converter</h2>
 				<p>Enter the number of days to convert to hours</p>
 				<input
 					type="number"
